@@ -6,12 +6,12 @@
 /*   By: ajordan- <ajordan-@student.42urduli>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/07 14:49:19 by ajordan-          #+#    #+#             */
-/*   Updated: 2022/05/07 15:39:28 by ajordan-         ###   ########.fr       */
+/*   Updated: 2022/05/07 16:11:12 by ajordan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "so_long.h"
-# include "../lib/minilibx/mlx.h"
+#include "../lib/minilibx/mlx.h"
 
 void	ft_put_limits(t_game *game)
 {
