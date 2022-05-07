@@ -6,14 +6,14 @@
 /*   By: ajordan- <ajordan-@student.42urduli>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/07 14:55:30 by ajordan-          #+#    #+#             */
-/*   Updated: 2022/05/07 16:00:21 by ajordan-         ###   ########.fr       */
+/*   Updated: 2022/05/08 01:08:43 by ajordan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "so_long.h"
 #include "../lib/libft/inc/libft.h"
 #include "../lib/minilibx/mlx.h"
-#include <stdio.h>
+#include "../lib/libft/inc/ft_printf.h"
 #include <stdlib.h>
 #include <fcntl.h>
 
@@ -37,7 +37,7 @@ void	ft_validate_map(char **argv, t_game *game)
 	fd = open(argv[1], O_RDONLY);
 	if (fd == -1)
 	{
-		printf("Error!\nThe map could not be read.\n");
+		ft_printf("Error!\nThe map could not be read.\n");
 		exit (1);
 	}
 	buffer = ft_get_map(fd);
@@ -71,12 +71,12 @@ void	ft_check_arg(int argc, char **argv)
 {
 	if (argc != 2)
 	{
-		printf("Error\nInvalid number of arguments. Must be 2.\n");
+		ft_printf("Error\nInvalid number of arguments. Must be 2.\n");
 		exit(0);
 	}
 	if (!ft_strnstr(argv[1], ".ber", ft_strlen(argv[1])))
 	{
-		printf("Error\nInvalid file type. Must be: \"<name>.ber\"\n");
+		ft_printf("Error\nInvalid file type. Must be: \"<name>.ber\"\n");
 		exit (1);
 	}
 }

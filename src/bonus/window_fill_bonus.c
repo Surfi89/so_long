@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   window_fill.c                                      :+:      :+:    :+:   */
+/*   window_fill_bonus.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ajordan- <ajordan-@student.42urduli>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/07 15:00:53 by ajordan-          #+#    #+#             */
-/*   Updated: 2022/05/07 16:11:33 by ajordan-         ###   ########.fr       */
+/*   Updated: 2022/05/08 00:58:19 by ajordan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 void	ft_put_limits(t_game *game)
 {
 	game->file = mlx_xpm_file_to_image(game->mlx,
-			"./img/wall.xpm", &game->pxl, &game->pxl);
+			"./img/tree.xpm", &game->pxl, &game->pxl);
 	mlx_put_image_to_window (game->mlx, game->mlx_win,
 		game->file, game->pxl * game->x,
 		game->pxl * game->y);

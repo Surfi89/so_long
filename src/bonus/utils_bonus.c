@@ -6,14 +6,14 @@
 /*   By: ajordan- <ajordan-@student.42urduli>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/07 15:03:01 by ajordan-          #+#    #+#             */
-/*   Updated: 2022/05/07 16:04:36 by ajordan-         ###   ########.fr       */
+/*   Updated: 2022/05/08 01:35:41 by ajordan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "so_long_bonus.h"
 #include "../lib/libft/inc/libft.h"
 #include "../lib/minilibx/mlx.h"
-#include <stdio.h>
+#include "../lib/libft/inc/ft_printf.h"
 
 void	ft_mov_display(t_game *game)
 {
@@ -21,7 +21,7 @@ void	ft_mov_display(t_game *game)
 		game->pxl * game->map_x * (0.84), 10, 0x80000,
 		"Movements: ");
 	mlx_string_put(game->mlx, game->mlx_win,
-		game->pxl * game->map_x * (0.96), 10, 0x80000,
+		game->pxl * game->map_x * (0.95), 10, 0x80000,
 		ft_itoa(game->pl_mov));
 }
 
@@ -41,7 +41,7 @@ void	ft_enemy(int keyhook, t_game *game)
 		|| (keyhook == 0 && game->map[game->pl_y][game->pl_x - 1] == 'K')
 		|| (keyhook == 13 && game->map[game->pl_y - 1][game->pl_x] == 'K')))
 	{
-		printf("OAK: Fainted! You cannot beat Mewtwo...\n");
+		ft_printf("OAK: Fainted! You cannot beat Mewtwo...\n");
 		ft_close_window(game);
 	}
 }

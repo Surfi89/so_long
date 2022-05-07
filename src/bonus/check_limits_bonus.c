@@ -6,18 +6,18 @@
 /*   By: ajordan- <ajordan-@student.42urduli>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/07 14:59:32 by ajordan-          #+#    #+#             */
-/*   Updated: 2022/05/07 15:56:58 by ajordan-         ###   ########.fr       */
+/*   Updated: 2022/05/08 01:06:53 by ajordan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "so_long_bonus.h"
-#include <stdio.h>
+#include "../lib/libft/inc/ft_printf.h"
 #include <stdlib.h>
 
 void	ft_limits_error(void)
 {
-	printf("Error!\nNot enough trees in the screen limits.\n");
-	printf("Please, plant 1 where they are supposed to be.\n");
+	ft_printf("Error!\nNot enough trees in the screen limits.\n");
+	ft_printf("Please, plant 1 in each hole to continue.\n");
 	exit(1);
 }
 

@@ -6,13 +6,13 @@
 /*   By: ajordan- <ajordan-@student.42urduli>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/07 14:44:43 by ajordan-          #+#    #+#             */
-/*   Updated: 2022/05/07 15:55:18 by ajordan-         ###   ########.fr       */
+/*   Updated: 2022/05/08 01:38:56 by ajordan-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "so_long.h"
 #include "../lib/libft/inc/libft.h"
-#include <stdio.h>
+#include "../lib/libft/inc/ft_printf.h"
 #include <stdlib.h>
 
 void	ft_check_map(char *buffer, t_game *game)
@@ -20,7 +20,7 @@ void	ft_check_map(char *buffer, t_game *game)
 	game->map_area = ft_strlen(buffer) - game->map_y;
 	if (game->map_area != game->map_x * game->map_y)
 	{
-		printf("Error!\nThe map has a wrong layout.\n");
+		ft_printf("Error!\nThe map has a wrong layout.\n");
 		exit (1);
 	}
 	ft_check_x_limits(game);
@@ -46,7 +46,7 @@ void	ft_check_pce(char *buffer, t_game *game)
 	}
 	if (game->player != 1 || game->collect < 1 || game->exit != 1)
 	{
-		printf("Error\nIncorrect number of Players, Collectibles or Exits.\n");
+		ft_printf("Error\nIncorrect number of Players, Collectibles or Exits.\n");
 		exit(1);
 	}
 }
