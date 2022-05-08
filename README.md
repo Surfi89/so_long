@@ -85,5 +85,5 @@ I added some maps if you want to test the game.
 - "map2.ber" is a bigger map with more collectibles.
 - "map3.ber" has some enemies for playing with the bonus minigame.
 
+![so_long_42](https://github.com/Surfi89/so_long/blob/main/so_long_42.png)
 
-https://github.com/Surfi89/so_long/blob/main/so_long_42.png
