@@ -3,15 +3,15 @@
 </h1>
 
 <p align="center">
-	<b><i>The virtual machine</i></b><br>
+	<b><i>And thanks for all the fish!</i></b><br>
 </p>
 
 <p align="center">
-	<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/surfi89/Born2beroot?color=lightblue" />
-	<img alt="Number of lines of code" src="https://img.shields.io/tokei/lines/github/surfi89/Born2beroot?color=critical" />
-	<img alt="Code language count" src="https://img.shields.io/github/languages/count/surfi89/Born2beroot?color=yellow" />
-	<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/surfi89/Born2beroot?color=blue" />
-	<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/surfi89/Born2beroot?color=green" />
+	<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/surfi89/so_long?color=lightblue" />
+	<img alt="Number of lines of code" src="https://img.shields.io/tokei/lines/github/surfi89/so_long?color=critical" />
+	<img alt="Code language count" src="https://img.shields.io/github/languages/count/surfi89/so_long?color=yellow" />
+	<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/surfi89/so_long?color=blue" />
+	<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/surfi89/so_long?color=green" />
 </p>
 
 <h3 align="center">
@@ -26,9 +26,18 @@
 
 ## 💡 About the project
 
-> _The purpose of this project is to code a small data exchange program using
-UNIX signals._
+> _This project is a very small 2D game.
+Its purpose is to make you work with textures, sprites, and some other very basic gameplay elements._
 
+	It’s time for you to create a basic computer graphics project!
+	so long will help you improve your skills in the following areas:
+	window management, event handling, colors, textures, and so forth.
+	You are going to use the school graphical library: the MiniLibX!
+	This library was developed internally and includes basic necessary tools to open
+	a window, create images and deal with keyboard and mouse events.
+	The other goals are similar to every other goal for this first year:
+	being rigorous, level up in C programming, use basic algorithms, do some
+	information research, and so forth. 
 
 For more detailed information, look at the [**subject of this project**](https://github.com/Surfi89/42cursus/tree/main/Subject%20PDFs).
 
@@ -49,19 +58,32 @@ To compile, go to the project path and run:
 $ make
 ```
 
+or
+
+```shell
+$ make bonus
+```
+
+If you want the player sprite to be animated and have enemies in the map.
 
 ## 📋 Testing
 
-To test the program you just need to launch the "server" and the "client" in different shell tabs with the following:
+To play the minigame just need to launch it with the following shell command:
 
 ```shell
-$ ./server
+$ ./so_long <map_name>.ber
 ```
 
-This will show your PID to make the client work and will stay waiting to receive a message from the "client"
+or
 
 ```shell
-$ ./client "PID" "Your message string"
+$ ./so_long_bonus <map_name>.ber
 ```
 
-By launching it, this will show "Your message string" on the server window.
+I added some maps if you want to test the game.
+- "map1.ber" is a very simple map.
+- "map2.ber" is a bigger map with more collectibles.
+- "map3.ber" has some enemies for playing with the bonus minigame.
+
+
+https://github.com/Surfi89/so_long/blob/main/so_long_42.png
