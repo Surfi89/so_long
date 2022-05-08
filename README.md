@@ -66,7 +66,7 @@ $ make bonus
 
 If you want the player sprite to be animated and have enemies in the map.
 
-## 📋 Testing
+## 📋 How to play
 
 To play the minigame just need to launch it with the following shell command:
 
@@ -84,6 +84,41 @@ I added some maps if you want to test the game.
 - "map1.ber" is a very simple map.
 - "map2.ber" is a bigger map with more collectibles.
 - "map3.ber" has some enemies for playing with the bonus minigame.
+
+**Controls**
+
+You can use WASD to move UP, LEFT, DOWN or RIGHT respectively.
+To quit the game press ESC or click on the red cross of window.
+If you touch an enemy you loose the game.
+To win its necessary to pick up all collectibles and get back to the exit.
+
+**Maps**
+
+You can use any map of your choice as long as you follow the next rules:
+
+* The file extension must be `.ber`.
+* Its must be rectangular, and the whole map limits must be a `1`.
+* It can only have one exit, one player and at least one collectible.
+* Characters allowed:
+
+|  Character  |          Object          |
+|:-----------:|:------------------------:|
+|     *1*     | Obstacle                 |
+|     *0*     | Empty                    |
+|     *C*     | collectible              |
+|     *E*     | exit                     |
+|     *P*     | Player starting position |
+|     *K*     | Enemy position           |
+
+
+I added some maps if you want to test the game.
+- "map1.ber" is a very simple map.
+- "map2.ber" is a bigger map with more collectibles.
+- "map3.ber" has some enemies for playing with the bonus minigame.
+
+
+Example of map2.ber with an enemy:
+
 
 ![so_long_42](https://github.com/Surfi89/so_long/blob/main/so_long_42.png)
 
